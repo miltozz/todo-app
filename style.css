@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html {
+  box-sizing: border-box;
+  background: url("images/rawe.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  padding: 20px;
+  max-width: 350px;
+  background: rgba(245, 245, 245, 0.9);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+.tasks {
+  /* background-color: rgba(51, 255, 51, 0.8); */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+.tasks li {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+  padding: 10px;
+  /* font-weight: 400; */
+  display: flex;
+}
+
+.tasks li:first-child{
+  text-transform: uppercase;
+}
+
+.tasks label {
+  /* background: red; */
+  flex: 1;
+  cursor: pointer;
+}
+
+.tasks input[type=checkbox] {
+  display: none;
+}
+
+.tasks input + label:before {
+  font-size: 1.1em;
+  content: "⏳";
+  margin-right: 10px;
+}
+
+.tasks input:checked + label:before {
+  font-size: 1.1em;
+  content: "⌛";
+}
+
+.add-tasks {
+  margin-top: 20px;
+}
+
+.add-tasks input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.del{
+  font-size: 0.5em;
+  opacity: 0.8;
+  padding: 2px 0px;
+  background-color: red;
+
+}
+
+

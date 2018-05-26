@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>TODO</h2>
+        <p></p>
+        <ul class="tasks">
+            <li>Add a task...</li>
+            <li>
+                <input type="checkbox" name="item1" id="item1">
+                <label for="item1">do shit</label>
+                <!-- <input type="button" class="del" name="del1" id="del1" value="x"> -->
+                <span class="del">x</span>
+            </li>
+            <li>
+                <input type="checkbox" name="item2" id="item2">
+                <label for="item1">buy milk</label>
+            </li>
+            <li>
+                <input type="checkbox" name="item2" id="item2">
+                <label for="item1">learn react</label>
+            </li>
+        </ul>
+        <form class="add-tasks">
+            <input type="text" name="task" placeholder="Task Name" required>
+            <input type="submit" value="+ Add Task">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
