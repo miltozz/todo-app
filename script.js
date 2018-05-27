@@ -9,7 +9,6 @@
         let status = task.done ? "done" : " ";
         return `
         <li>
-        <input type="checkbox">
         <label class=${status}>${task.text}</label>
         <span class="del">x</span>
         </li>`;
