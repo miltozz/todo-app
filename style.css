@@ -79,9 +79,6 @@ h2 {
 }
 
 @media only screen and (max-width: 992px) {
-  html{
-    font-size: 1.4em;
-  }
 
   .wrapper{
     max-width: 70vw;
@@ -89,7 +86,7 @@ h2 {
   }
 
   h2{
-    color:red;
+    color:#666;
   }
 
 }
