@@ -78,7 +78,7 @@ h2 {
   background-color: rgba(250, 1, 1, 0.767);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   html{
     font-size: 1.4em;
   }
