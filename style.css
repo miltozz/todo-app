@@ -85,6 +85,11 @@ h2 {
 
   .wrapper{
     max-width: 70vw;
+    
+  }
+
+  h2{
+    color:red;
   }
 
 }
