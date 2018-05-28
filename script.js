@@ -1,7 +1,7 @@
 (function todo() {
   const addTasks = document.querySelector(".add-tasks");
   const tasksList = document.querySelector(".tasks");
-  const tasks = [];
+  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
   function populate() {
     tasksList.innerHTML = tasks
@@ -25,8 +25,10 @@
     };
 
     tasks.push(task);
-    this.reset();
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     populate();
+    this.reset();
   }
 
   function handleClick(e) {
@@ -58,8 +60,21 @@
         }
       });
     }
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
+
+  function hideFooter(e) {
+    if (!e.target.matches("footer")) {
+      return;
+    }
+
+    e.target.style.display = "none";
   }
 
   addTasks.addEventListener("submit", addTask);
   tasksList.addEventListener("click", handleClick);
+  document.querySelector(".footer").addEventListener("click", hideFooter);
+
+  populate();
 })();

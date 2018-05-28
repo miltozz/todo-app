@@ -75,18 +75,21 @@ h2 {
 }
 
 .del:hover {
-  background-color: rgba(250, 1, 1, 0.767);
+  background-color: rgba(250, 1, 1, 0.6);
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  font-size: 0.7em;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 992px) {
-
-  .wrapper{
+  .wrapper {
     max-width: 70vw;
-    
   }
-
-  h2{
-    color:#666;
-  }
-
 }
